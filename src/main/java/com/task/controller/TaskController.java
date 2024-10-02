@@ -1,5 +1,6 @@
 package com.task.controller;
 
+import com.task.dto.TaskRequestDTO;
 import com.task.entity.Task;
 import com.task.exception.ResourceNotFoundException;
 import com.task.service.TaskService;
@@ -32,8 +33,8 @@ public class TaskController {
 
     // Create a new task
     @PostMapping
-    public Task createTask(@RequestBody Task task) {
-        return taskService.createTask(task);
+    public Task createTask(@RequestBody TaskRequestDTO taskRequestDTO) {
+        return taskService.createTask(taskRequestDTO);
     }
 
     // Update an existing task

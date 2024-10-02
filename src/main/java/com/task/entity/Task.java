@@ -54,6 +54,4 @@ public class Task {
 
     @UpdateTimestamp
     private Timestamp updatedAt;
-
-    // Getters and setters
 }
